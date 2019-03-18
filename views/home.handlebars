@@ -1,0 +1,37 @@
+<table class="table-outer">
+<thead>
+  <th></th>
+  <th>Name</th>
+  <th>Volume (24h)</th>
+  <th>Country</th>
+  <th>Launched</th>
+</thead>
+{{#list data}}
+<tr>
+  <td>
+    <img src="{{image}}">
+  </td>
+  <td id="table-name">
+    <a target="_blank" rel="noopener noreferrer" href="{{url}}" id="detailsbtn" data-id="{{@index}}"
+      class="list-group-item">{{name}}</a>
+  </td>
+  <td>
+    <span class="volume-span">${{distanceFixed trade_volume_24h_btc}}</span>
+  </td>
+  <td id="table-country">
+    {{#if country}}
+      {{country}}
+    {{else}}
+      <span class="spans">N/A</span>
+    {{/if}}
+  </td>
+  <td id="table-year">
+    {{#if year_established}}
+      {{year_established}}
+    {{else}}
+      <span class="spans">N/A</span>
+    {{/if}}
+  </td>
+</tr>
+{{/list}}
+</table>

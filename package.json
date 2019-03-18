@@ -1,0 +1,30 @@
+{
+  "name": "alex-salt-winter19-hackdayw09",
+  "version": "1.0.0",
+  "description": "crypto exchanges live list",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "handlebars": "^4.1.0",
+    "node-fetch": "^2.3.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderSalt/hack-day.git"
+  },
+  "author": "Alexander Yalcin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexanderSalt/hack-day/issues"
+  },
+  "homepage": "https://github.com/AlexanderSalt/hack-day#readme"
+}
